@@ -4,26 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe 1</title>
+    <link rel="stylesheet" href="recipe-style.css" />
+    <title>Cookbook- Find delicious recipes here!</title>
+
   </head>
   <body>
     <header>
-      <nav>
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
-      </nav>
+      <div class="contanier-nav"> 
+       <nav>
+         <ul>
+           <li class="active"><a href="#"><b>Home</b></a></li>
+           <li><a href="#"><b>About</b></a></li>
+           <li><a href="#"><b>Contact</b></a></li>
+         </ul>
+       </nav>
+     </div>
     </header>
+
+
     <main>
+    
+
       <section id="static-menu"></section>
-      <img src="" alt="" />
-      <h1>Recipe1</h1>
-      <table></table>
-      <ol></ol>
+      <!--the static-menu comes here-->
+
+      <!------------recipe content------------>
+      <section id= "home">
+        <img src="../images/breakfast-tarts-pinterest.jpeg" alt="tarts breakfast"/>
+        <div class="content">
+          <h1><b>Crescent Breakfast Tart</b></h1>
+          <br>
+          <ul>
+            <h3>INGREDIENTS</h3></li>
+            <br>
+            <li>- 1 can crescent dough</li>
+            <li>- 6 eggs</li>
+            <li>- 2/3 c. white cheddar</li>
+            <li>- 4 slices cooked bacon</li>
+            <li>- kosher salt</li>
+            <li>- Freshly ground black pepper</li>
+            <li>- 1 tbsp. Chopped chives, for garnish</li>
+          </ul>
+        </div>
+      
+        <div class="directions">
+         <ul>
+            <li><h3>DIRECTIONS</h3></li>
+            <br>
+            <li><b>1st:</b> Preheat oven to 400° and line a medium baking sheet with parchment paper. Place crescent dough on baking sheet and pinch seams together.</li>
+            <br>
+            <li><b>2nd:</b> Fold edges of dough in to create a crust. Crack eggs onto crescent dough and sprinkle with cheese. Place bacon on top and season all over with salt and pepper.</li>
+            <br>
+            <li><b>3rd:</b> Carefully transfer baking sheet to oven and bake until crust is golden and egg whites are set, 10 to 15 minutes.</li>
+            <br>
+            <li><b>4th:</b> Garnish with chives. Slice into squares and serve warm.</li>
+         </ul>
+        </div>
+
+      </section>
+      
+
     </main>
-    <footer>
-      <h2>Copyright</h2>
-      <h2>Collaborate</h2>
+
+
+    
+
+    <footer class="container-bottom">
+      <h4 class= "copyright">copyright&copy;</h4>
+      <h2 class="collaborate">Collaborate</h2>
     </footer>
   </body>
 </html>

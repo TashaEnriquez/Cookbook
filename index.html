@@ -16,18 +16,28 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <title>Cookbook</title>
+    <title>Cookbook- Find delicious recipes here!</title>
   </head>
+  
   <body>
     <header>
-      <nav class="top-nav">
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
-      </nav>
+      <div class="contanier-nav"> 
+       <nav>
+         <ul>
+           <li class="active"><a href="#"><b>Home</b></a></li>
+           <li><a href="#"><b>About</b></a></li>
+           <li><a href="#"><b>Contact</b></a></li>
+         </ul>
+       </nav>
+     </div>
     </header>
-    <main>
-      <nav class="left-nav">
+
+    <main class="body-container">
+      
+      <!-- Add flexbox for the content-->
+      
+      <section id="static-menu">
+        <nav class="left-nav">
         <img src="images/logo.png" alt="applab logo" />
         <ul class="menu-items">
           <li><a href="#home">Breakfast</a></li>
@@ -35,11 +45,24 @@
           <li><a href="#prices">Dinner</a></li>
         </ul>
       </nav>
-      <h1>Welcome to my kitchen</h1>
+      </section>
+      
+      <!--Static menu comes here-->
+      
+      <section class="main-content">
+        <h1>Welcome to my kitchen</h1>
+        <br>
+        <p>Find out the most delicius recipes for your daily needs. 
+        Here you're going to find recipes for breakfast, lunch, brunches and the last but not least dinner options.
+        </p>
+      </section>
+
     </main>
-    <footer>
-      <h2>Copyright</h2>
-      <h2>Collaborate</h2>
+
+    <footer class="container-bottom">
+      <h4 class= "copyright">copyright&copy;</h4>
+      <h2 class="collaborate">Collaborate</h2>
     </footer>
+    
   </body>
 </html>
