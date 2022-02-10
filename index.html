@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Cookbook</title>
+    <title>Cookbook- Find delicious recipes here!</title>
   </head>
   <body>
     <header>
-      <nav>
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
-      </nav>
+      <div class="contanier-nav"> 
+       <nav>
+         <ul>
+           <li class="active"><a href="#"><b>Home</b></a></li>
+           <li><a href="#"><b>About</b></a></li>
+           <li><a href="#"><b>Contact</b></a></li>
+         </ul>
+       </nav>
+     </div>
     </header>
-    <main>
+
+
+    <main class="body-container">
+      <!--
+        Add flexbox for the content
+      -->
       <section id="static-menu"></section>
-      <h1>Welcome to my kitchen</h1>
+      <!--Static menu comes here-->
+      <section class="main-content">
+        <h1>Welcome to my kitchen</h1>
+        <br>
+        <p>Find out the most delicius recipes for your daily needs. 
+        Here you're going to find recipes for breakfast, lunch, brunches and the last but not least dinner options.
+        </p>
+      </section>
     </main>
-    <footer>
-      <h2>Copyright</h2>
-      <h2>Collaborate</h2>
+
+
+
+
+    <footer class="container-bottom">
+      <h4 class= "copyright">copyright&copy;</h4>
+      <h2 class="collaborate">Collaborate</h2>
+     
     </footer>
   </body>
 </html>
