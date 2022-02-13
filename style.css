@@ -1,17 +1,35 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+}
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #cfb99796;
+  align-content: center;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
 }
 /*-----------------top navigation-----------------------*/
-header { @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+header {
+  font-family: "Oswald", sans-serif;
   background-color: #cfb997;
   overflow: hidden;
 }
 
 .conteiner-nav {
   width: 50%;
-  margin:0px auto;
+  margin: 0px auto;
 }
 
 nav {
@@ -21,75 +39,262 @@ nav {
 nav ul {
   margin: 30px;
   padding: 0;
-  list-style: none; 
+  list-style: none;
 }
 
-nav li{
+nav li {
   display: inline-block;
   margin-left: 70px;
   margin: 0 35px;
 }
 
-nav a{
-  color: rgb(247, 235, 235);
+nav a {
+  color: #f8eded;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav li a:hover {
-  
-  background: rgb(26, 25, 25);
-  color: rgb(210, 209, 209);
-  padding:5px;
-  border-radius: 2rem;
+  color: rgba(43, 40, 34, 0.544);
 }
 
- li.active a {
-	color: rgba(43, 40, 34, 0.544);
+li.active a {
+  color: rgba(43, 40, 34, 0.544);
 }
 /*-----------------main-----------------------*/
-
-
-
-body {
-  background-image: url("images/Cooking.jpeg");
-  color:rgb(247, 235, 235);
-  text-align: center;
+.body-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
 
+  justify-content: space-around;
 
+  align-items: center;
+
+  min-height: 100%;
+}
+
+.main-container {
+  display: flex;
+
+  flex-direction: column;
+
+  background-image: url("images/Cooking.jpeg");
+  background-repeat: no-repeat;
+  background-color: #cfb99796;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    0px 0px 41px 22px rgba(0, 0, 0, 0.37);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    0px 0px 41px 22px rgba(0, 0, 0, 0.37);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+.main-content img {
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 5rem;
+
+  color: #cfb997;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    inset 8px -11px 17px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    inset 8px -11px 17px 0px rgba(0, 0, 0, 0.18);
+}
+.body-container .main-content h1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  color: #f8eded;
+}
+
+.body-container .main-content p {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem 0 3rem;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  color: #f8eded;
+  font-size: 1.2rem;
+}
+
+#static-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.left-nav {
+  align-self: center;
+}
+
+.left-nav img {
+  background-color: #cfb997a9;
+  height: 280px;
+  width: 280px;
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
 
 /*-----------------footer-----------------------*/
 .container-bottom {
   display: flex;
-  justify-content:space-between;
-  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
   background-color: #cfb997;
-  color:rgb(247, 235, 235);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  color: rgb(247, 235, 235);
+  margin-top: 0;
+
   height: 90px;
 }
 
-.copyright{
-  justify-content: center;
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 900px;
-  
+.copyright {
+  padding: 2rem;
 }
 
-.collaborate{
-  padding-top: 20px;
-  padding-left: 20px;
-  margin-left: 70px;
-  margin-right: 40px;
-  display: inline-block;
- 
-  
-  /*I have to fix the collaborative on the right and the copyright on the left */
+.collaborate {
+  padding: 2rem;
+}
 
+.collaborate:hover,
+.copyright:hover {
+  color: rgba(43, 40, 34, 0.544);
+}
+/*Boostrap side menu css*/
+
+.flex-shrink-0 {
+  margin: 0 3rem 3rem 3rem;
+  background-color: #cfb997a9;
+  border-radius: 1rem;
+}
+
+.b-example-divider {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  border: 0;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #cfb997b9;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, 0.85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #cfb997b9;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+.lh-tight {
+  line-height: 1.25;
+}
+
+#side-list {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.left-nav ul {
+  margin: 0;
+  padding: 1rem;
+}
+
+.left-nav ul li {
+  margin: 0 2rem 1rem 0;
+}
+
+.btn.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ffffff50;
+}
+
+#active {
+  background-color: #cfb997b9;
 }
