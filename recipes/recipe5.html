@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="recipe-style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald&display=swap" rel="stylesheet">
     <title>Cookbook- Find delicious recipes here!</title>
 
   </head>
   <body>
+    <div class="big-container">
     <header>
       <div class="contanier-nav"> 
        <nav>
          <ul>
-           <li class="active"><a href="#"><b>Home</b></a></li>
+           <li class="active"><a href="..\index.html"><b>Home</b></a></li>
            <li><a href="#"><b>About</b></a></li>
            <li><a href="#"><b>Contact</b></a></li>
          </ul>
@@ -23,13 +33,120 @@
 
 
     <main>
-    
+     <div class="main-container">
+        <div class="body-container">
 
-      <section id="static-menu"></section>
-      <!--the static-menu comes here-->
+      
+      
+      <!-- Added flexbox for the content-->
+
+      <section id="static-menu">
+        <nav class="left-nav">
+          <img src="..\images\logo.png" alt="applab logo" />
+
+          <div class="flex-shrink-0 p-3" style="width: 280px">
+            <a
+              href="..\index.html"
+              class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
+            >
+              <span class="fs-5 fw-semibold">My kitchen </span>
+            </a>
+
+            <ul id="side-list">
+              <li>
+                <button
+                  class="btn btn-toggle rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#brekfast-collapse"
+                  aria-expanded="true"
+                >
+                  Breakfast
+                </button>
+                <div class="collapse" id="brekfast-collapse">
+                  <ul class="btn-toggle-nav side-list fw-normal pb-1 small" >
+                    <li id="active">
+                      <a
+                        href="..\recipes\recipe1.html"
+                        class="link-dark rounded"
+                        >Crescent Breakfast Tart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="..\recipes\recipe2.html"
+                        class="link-dark rounded"
+                        >Easy Crêpes</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#lunch-collapse"
+                  aria-expanded="false"
+                >
+                  Lunch
+                </button>
+                <div class="collapse" id="lunch-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="..\recipes\recipe3.html"
+                        class="link-dark rounded"
+                        >Ahi Poke Bowls</a
+                      >
+                    </li>
+                    <li >
+                      <a
+                        href="..\recipes\recipe4.html"
+                        class="link-dark rounded"
+                        >Chicken Fajitas</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#dinner-collapse"
+                  aria-expanded="false"
+                >
+                  Dinner
+                </button>
+                <div class="collapse show" id="dinner-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li id="active">
+                      <a
+                        href="..\recipes\recipe5.html"
+                        class="link-dark rounded"
+                        >Creamy Tuscan Chicken</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="..\recipes\recipe6.html"
+                        class="link-dark rounded"
+                        >Garlicky Lemon Mahi-Mahi</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
 
       <!------------recipe content------------>
-      <section id= "home">
+        <section id= "home">
+          <div class="h-container">
         <img src="../images/creamy-tuscan-chicken-delish.jpeg" alt="Chicken Fajitas dish"/>
         <div class="content">
           <h1><b>Creamy Tuscan Chicken</b></h1>
@@ -51,23 +168,24 @@
             <li>- Lemon wedges, for serving</li>
           </ul>
         </div>
-      
+      </div>
         <div class="directions">
          <ul>
             <li><h3>DIRECTIONS</h3></li>
             <br>
-            <li><b>1st:</b> In a skillet over medium heat, heat oil. Add chicken and season with salt, pepper, and oregano. Cook until golden and no longer pink, 8 minutes per side. Remove from skillet and set aside.</li>
+            <li><b>1st:</b> In a skillet over medium heat, heat oil. Add chicken and season with salt, pepper, and oregano. Cook until golden and no longer pink, 8 minutes per side.<br>  Remove from skillet and set aside.</li>
             <br>
-            <li><b>2nd:</b>In the same skillet over medium heat, melt butter. Stir in garlic and cook until fragrant, about 1 minute. Add cherry tomatoes and season with salt and pepper. Cook until tomatoes are beginning to burst then add spinach and cook until spinach is beginning to wilt.</li>
+            <li><b>2nd:</b>In the same skillet over medium heat, melt butter. Stir in garlic and cook until fragrant, about 1 minute. Add cherry tomatoes and season with salt and pepper.<br> Cook until tomatoes are beginning to burst then add spinach and cook until spinach is beginning to wilt.</li>
             <br>
-            <li><b>3rd:</b>Stir in heavy cream and parmesan and bring mixture to a simmer. Reduce heat to low and simmer until sauce is slightly reduced, about 3 minutes. Return chicken to skillet and cook until heated through, 5 to 7 minutes.</li>
+            <li><b>3rd:</b>Stir in heavy cream and parmesan and bring mixture to a simmer. Reduce heat to low and simmer until sauce is slightly reduced, about 3 minutes.<br>  Return chicken to skillet and cook until heated through, 5 to 7 minutes.</li>
+            <br>
             <li><b>4th:</b>Serve with lemon wedges. </li>
             <br>
          </ul>
         </div>
 
       </section>
-      
+     <!-------END RECIPE CONTENT-------> 
 
     </main>
 
@@ -78,5 +196,11 @@
       <h4 class= "copyright">copyright&copy;</h4>
       <h2 class="collaborate">Collaborate</h2>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    </div>
   </body>
 </html>
