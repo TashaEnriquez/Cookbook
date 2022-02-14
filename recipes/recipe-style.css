@@ -26,6 +26,7 @@ header {
   font-family: "Oswald", sans-serif;
   background-color: #cfb997;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .conteiner-nav {
@@ -50,13 +51,13 @@ nav li {
 }
 
 nav a {
-  color: rgb(247, 235, 235);
+  color: #f7ebeb;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav li a:hover {
-  color: rgba(43, 40, 34, 0.544);
+  color: #2b28228b;
 }
 
 li.active a {
@@ -87,10 +88,9 @@ main {
   display: flex;
 
   flex-direction: column;
-  background-image: url("images/Cooking.jpeg");
 
   background-repeat: no-repeat;
-  background-color: #cfb99796;
+  background-color: #ccbda7;
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
@@ -157,6 +157,7 @@ main {
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  margin-right: 10px;
 }
 
 #home img:hover {
@@ -185,9 +186,28 @@ main {
 }
 
 .directions ul {
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
   border-radius: 10%;
   list-style: none;
+  margin: 0;
+}
+
+.directions button {
+  font-size: 1.1em;
+  background-color: #cfb997;
+  color: #000000;
+  border: 0px;
+  box-shadow: 4px 4px 4px #999999;
+  float: right;
+  margin: 0 200px 10px 0;
+}
+button:hover,
+button:focus,
+button:active {
+  /* swap colors */
+  color: #f7ebeb;
+
+  cursor: pointer; /* displays a hand */
 }
 
 /*-----------------footer-----------------------*/
@@ -197,7 +217,7 @@ main {
   font-family: "Oswald", sans-serif;
   background-color: #cfb997;
   color: rgb(247, 235, 235);
-
+  margin-top: 5px;
   height: 90px;
 }
 
